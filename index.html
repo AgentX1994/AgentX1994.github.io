@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>
 		John Asper
 	</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles/main.css"/>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
   		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -12,18 +14,85 @@
   	<script src="scripts/main.js"></script>
 </head>
 <body>
-	<div id='container'>
-		<div id='mainimage'>
-			<img id='mainimageimg' src='https://www.cs.cornell.edu/jeh/images/CS2_2line_4c.gif' alt='Cornell CS logo'></img>
-		</div>
-		<div id='maintext'>
-			<h1 id='mainname'>
-				John Asper - Software Engineer
-			</h1>
-			<h1 id='mainuni'>
-				Cornell University Computer Science 2016
-			</h1>
-		</div>
+	<header id="header">
+		<img id="header-logo" src="http://pgnewsbreaker.com/wp-content/uploads/2015/12/Cornell_logo.jpg" height="89" width="89" alt="Cornell University Logo"/>
+		<h1 id="header-name">John Asper</h1>
+	</header>
+	<div class="jumbotron">
+		<h1 id="main-header">John Asper <br> Software Engineer</h1>
+	</div>
+	<div class="container-fluid">
+		<section id="main">
+			<div class="col-xs-6" id="education">
+				<h2>Education</h2>
+				<ul>
+					<li>
+						Cornell University, 2016
+					</li>
+					<li>
+						Bachelor's of Arts in Computer Science
+					</li>
+					<li>
+						Minor in Mathematics
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-6" id="interests">
+				<h2>Interests</h2>
+				<ul>
+					<li>
+						Computer Graphics
+					</li>
+					<li>
+						Game Development
+					</li>
+					<li>
+						Web Development
+					</li>
+				</ul>
+				<ul>
+					<li>
+						Music and Audio
+					</li>
+					<li>
+						Simulation
+					</li>
+					<li>
+						Algorithms
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12" id="projects">
+				<h2>Projects</h2>
+				<ul>
+					<li class="col-xs-6">
+						<a href="http://www.kongregate.com/games/teresali/gravity"><h3>Gravity</h3></a>
+						<p>
+							Implemented for Cornell CS 4154 in Fall 2015, in a group of 6, Gravity is a level based game where the player navigates an automatically scrolling level by controlling the gravity on their ball.
+						</p>
+					</li>
+					<li class="col-xs-6">
+						<h3>Dispossessed</h3>
+						<p>
+							Implemented for Cornell CS 3152 in Spring 2015, in a group of 6, Dispossessed is a top down shooter where the only way to get weapons is to possess your enemies.
+						</p>
+					</li>
+					<div class="clearfix"></div>
+					<li class="col-xs-6">
+						<a href="https://github.com/AgentX1994/AudioEffects"><h3>Audio Effects + Wav File Opener</h3></a>
+						<p>
+							A personal project to learn how the .wav file format works by implementing a C++ class that can open and save .wav files. This project was later extended with a simple implementation of a low pass audio filter.
+						</p>
+					</li>
+					<li class="col-xs-6">
+						<a href="https://github.com/AgentX1994/OpenGLRenderer"><h3>OpenGL Renderer</h3></a>
+						<p>
+							A personal project to learn C++ by using OpenGL to render a moving square with a simple motion blur shader.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
 	</div>
 </body>
 </html>
