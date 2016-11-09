@@ -15,7 +15,7 @@ html, body {
 .jumbotron {
 	min-height: 768px;
 	background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/34/Cornell_University,_Ho_Plaza_and_Sage_Hall.jpg);
-	background-size: 100%;
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	display: flex;
